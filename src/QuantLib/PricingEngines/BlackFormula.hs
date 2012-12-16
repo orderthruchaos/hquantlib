@@ -4,8 +4,8 @@ module QuantLib.PricingEngines.BlackFormula
 
 import Data.Maybe
 import QuantLib.Options
-import Numeric.GSL.Root
-import Numeric.GSL.Special.Erf
+import Numeric.GSL.Root (root, RootMethod( DNewton ))
+import Data.Number.Erf (erf)
 
 blackFormulaImpliedStdDev :: OptionType->Double->Double->Double->Double->Double->Maybe Double->Double->Int->Maybe Double
 blackFormulaImpliedStdDev opType strike forward blackPrice discount displacement guess accuracy maxIter

@@ -66,9 +66,9 @@ library
                         time            >= 1.2.0.0,
                         containers      >= 0.4.0.0,
                         hmatrix         >= 0.11.0.0,
-                        hmatrix-special >= 0.1.1,
                         parallel        >= 3.1.0.0,
-                        mersenne-random >= 1.0.0.0
+                        mersenne-random >= 1.0.0.0,
+                        erf             >= 2.0.0.0
 
         hs-source-dirs: src
         ghc-options:    -Wall
